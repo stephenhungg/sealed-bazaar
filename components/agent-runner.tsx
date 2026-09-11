@@ -128,7 +128,7 @@ export function AgentRunner({
         action === "resolve" ? "warn" : "success",
       );
       setPhase("complete");
-      sessionStorage.removeItem("sealed-active-session");
+      // Keep the capability in this tab so a refresh can retrieve the paid report.
       onComplete();
     } catch (e) {
       setError(e instanceof Error ? e.message : "Unable to settle.");
@@ -191,7 +191,7 @@ export function AgentRunner({
           "Recovery · refund already confirmed",
           "This purchase was already refunded.",
         );
-        sessionStorage.removeItem("sealed-active-session");
+        // Keep the completed trade available for tab-local recovery.
         return;
       }
       const delivered = await call("deliver");
@@ -277,7 +277,7 @@ export function AgentRunner({
         "success",
       );
       setPhase("complete");
-      sessionStorage.removeItem("sealed-active-session");
+      // Keep the capability in this tab so a refresh can retrieve the paid report.
       onComplete();
     } catch (e) {
       setError(
