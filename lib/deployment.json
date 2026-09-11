@@ -1,0 +1,24 @@
+{
+  "chainId": 42431,
+  "chainName": "Tempo Testnet (Moderato)",
+  "rpcUrl": "https://rpc.moderato.tempo.xyz",
+  "explorer": "https://explore.testnet.tempo.xyz",
+  "address": "0x0193a37a1d2f7754a01169cd772020870200494d",
+  "token": "0x20c0000000000000000000000000000000000001",
+  "tokenSymbol": "test AlphaUSD",
+  "tokenDecimals": 6,
+  "deployTx": "0x81b9d3c45533af4307be28eb484f7f5d9050b778158cbad0e67dc39f156b01fa",
+  "seller": "0xFa08feCC79AcFa5B440B82D9FF90Db4De2fc9421",
+  "buyer": "0xC6c3180A8435423602834feCA10A9ACC5bAcAac7",
+  "arbiter": "0x3B707597Ac70589D5b3C1fE9Af37b4174207cF89",
+  "windows": {
+    "delivery": 300,
+    "review": 600,
+    "arbitration": 300
+  },
+  "listingTxs": [
+    "0x7b40c40e32a073b9fa63f56e602cea0ccfea353ccdcef67ce7378f5c505cf3ca",
+    "0xc57995ac89024b963772585bbc7dd5cb7f1cd051d1dc9f519ceedb6f622c2ba4",
+    "0x26ea023b54ba3fd80718dba9f5b3dda2c0727483654ad2f64b4a4b9d64f6f59a"
+  ]
+}
